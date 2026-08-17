@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seguridad — Naunet Labs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><span class="logo-mark">◆</span> NAUNET <span class="logo-suffix">LABS</span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#productos">Productos</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="section section--white" style="padding-top: calc(var(--header-h) + 60px);">
+    <div class="container" style="max-width: 760px;">
+      <p class="eyebrow">Legal</p>
+      <h1 class="section-title" style="font-size: 40px;">Política de seguridad</h1>
+      <p class="section-subtitle">Última actualización: agosto de 2026</p>
+
+      <div style="margin-top: 40px; display: flex; flex-direction: column; gap: 28px; color: var(--ink-soft); font-size: 15px; line-height: 1.7;">
+        <div>
+          <h3 style="font-size: 18px; margin-bottom: 8px; color: var(--ink);">Estado actual</h3>
+          <p>Naunet Labs, en su versión actual, no tiene sistema de cuentas ni almacena contraseñas de usuarios — esa funcionalidad no existe todavía en la plataforma. No hay, por tanto, credenciales de usuario que proteger. Esta página se ampliará con el detalle técnico correspondiente (cifrado, gestión de contraseñas) cuando esa función se active.</p>
+        </div>
+        <div>
+          <h3 style="font-size: 18px; margin-bottom: 8px; color: var(--ink);">Conexión cifrada</h3>
+          <p>Todo el tráfico entre tu navegador y este sitio se sirve mediante HTTPS, lo que impide que terceros intercepten o modifiquen la información mientras viaja por la red.</p>
+        </div>
+        <div>
+          <h3 style="font-size: 18px; margin-bottom: 8px; color: var(--ink);">Formulario de contacto</h3>
+          <p>Los mensajes enviados a través del formulario de contacto se transmiten de forma cifrada al proveedor externo que gestiona su entrega, y no se almacenan en ningún servidor propio de Naunet Labs.</p>
+        </div>
+        <div>
+          <h3 style="font-size: 18px; margin-bottom: 8px; color: var(--ink);">Descargas</h3>
+          <p>Los archivos descargables del catálogo se distribuyen desde este mismo sitio o desde repositorios verificados por el propio desarrollador. Recomendamos verificar siempre la fuente antes de instalar cualquier software descargado de internet, incluido este.</p>
+        </div>
+        <div>
+          <h3 style="font-size: 18px; margin-bottom: 8px; color: var(--ink);">Notificación de incidencias</h3>
+          <p>Si detectas una vulnerabilidad o un problema de seguridad en este sitio o en cualquiera de los productos del catálogo, puedes reportarlo a través de la <a href="index.html#contacto" style="color: var(--red);">sección de contacto</a>. Se atiende de forma personal y se prioriza sobre otras consultas.</p>
+        </div>
+        <div>
+          <h3 style="font-size: 18px; margin-bottom: 8px; color: var(--ink);">Cambios en esta política</h3>
+          <p>Cuando se incorporen cuentas de usuario, esta página se actualizará con el detalle de cómo se almacenan y protegen las contraseñas (cifrado mediante hash, nunca en texto plano) antes de que esa función salga a producción.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="footer-note">© <span id="footerYear"></span> Naunet Labs. Todos los derechos reservados.</span>
+    <nav class="footer-links">
+      <a href="index.html">Volver al catálogo</a>
+      <a href="privacidad.html">Privacidad</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

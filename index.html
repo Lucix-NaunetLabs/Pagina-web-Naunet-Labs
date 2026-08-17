@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naunet Labs — Software de precisión</title>
+<meta name="description" content="Naunet Labs diseña y mantiene apps, ejecutables y extensiones para móvil y escritorio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ======================= HEADER ======================= -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">◆</span> NAUNET <span class="logo-suffix">LABS</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#productos">Productos</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#empresa">Empresa</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#productos" class="button button--primary button--sm"> Ver catálogo de productos</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- Sidebar opcional: categorías, ayuda rápida, navegación secundaria -->
+<div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+<aside class="sidebar" id="sidebar" aria-label="Navegación lateral">
+  <div class="sidebar-group">
+    <h4>Categorías</h4>
+    <button class="sidebar-link" data-filter="all">Todos los productos</button>
+    <button class="sidebar-link" data-filter="app">Apps</button>
+    <button class="sidebar-link" data-filter="ejecutable">Ejecutables</button>
+    <button class="sidebar-link" data-filter="extension">Extensiones</button>
+  </div>
+  <div class="sidebar-group">
+    <h4>Ayuda rápida</h4>
+    <a href="#recursos">Preguntas frecuentes</a>
+    <a href="#contacto">Soporte técnico</a>
+  </div>
+  <div class="sidebar-group">
+    <h4>Legal</h4>
+    <a href="privacidad.html">Privacidad</a>
+    <a href="seguridad.html">Seguridad</a>
+  </div>
+</aside>
+
+<main>
+  <!-- ======================= HERO ======================= -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="company-kicker">NAUNET LABS</p>
+      <h1 class="hero-title">Herramientas construidas con la <span class="accent">precisión</span> de un laboratorio.</h1>
+      <p class="hero-subtitle">Naunet Labs diseña y mantiene apps, ejecutables y extensiones para móvil y escritorio. Un solo desarrollador, un catálogo en crecimiento constante.</p>
+      <div class="hero-actions">
+        <a href="#productos" class="button button--primary">Ver catálogo</a>
+        <a href="#empresa" class="button button--ghost">Cómo trabajamos</a>
+      </div>
+      <div class="hero-readout">
+        <div><strong id="statProducts">—</strong>productos activos</div>
+        <div><strong>100%</strong>mantenido por una persona</div>
+        <div><strong>0</strong>dependencias de frameworks pesados</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CATÁLOGO (carrusel, 6 por página) ======================= -->
+  <section class="section section--white" id="productos">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Catálogo</p>
+        <h2 class="section-title">Nuestros productos</h2>
+        <p class="section-subtitle">Versión, plataforma, requisitos y notas de uso — sin letra pequeña.</p>
+      </div>
+
+      <div class="filter-bar reveal">
+        <button class="filter-chip is-active" data-filter="all">Todos</button>
+        <button class="filter-chip" data-filter="app">Apps</button>
+        <button class="filter-chip" data-filter="ejecutable">Ejecutables</button>
+        <button class="filter-chip" data-filter="extension">Extensiones</button>
+      </div>
+
+      <div class="carousel-arrows">
+        <button class="carousel-arrow" id="carouselPrev" aria-label="Productos anteriores">←</button>
+        <button class="carousel-arrow" id="carouselNext" aria-label="Siguientes productos">→</button>
+      </div>
+
+      <div class="carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Páginas de hasta 6 tarjetas generadas dinámicamente desde products.json -->
+        </div>
+      </div>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </section>
+
+  <!-- ======================= RECURSOS ======================= -->
+  <section class="section section--tight section--grey" id="recursos">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Recursos</p>
+        <h2 class="section-title">Documentación y notas de laboratorio</h2>
+        <p class="section-subtitle">Sección extensible: añade nuevas entradas duplicando <code>.resource-card</code>.</p>
+      </div>
+      <div class="grid grid--products reveal">
+        <article class="card resource-card">
+          <span class="tag">Documentación</span>
+          <h3>Guía de inicio rápido</h3>
+          <p>Cómo instalar y configurar cualquier producto del catálogo en menos de cinco minutos.</p>
+        </article>
+        <article class="card resource-card">
+          <span class="tag">Caso de éxito</span>
+          <h3>De la idea al lanzamiento</h3>
+          <p>El proceso real detrás de CoreLog, desde el primer boceto hasta la versión 2.1.0.</p>
+        </article>
+        <article class="card resource-card">
+          <span class="tag">Blog</span>
+          <h3>Notas de desarrollo</h3>
+          <p>Decisiones técnicas, cambios de rumbo y aprendizajes de construir en solitario.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= EMPRESA ======================= -->
+  <section class="section section--tight section--white" id="empresa">
+    <div class="container grid--split grid">
+      <div class="reveal">
+        <p class="eyebrow">Empresa</p>
+        <h2 class="section-title">Un laboratorio de una sola persona</h2>
+        <p class="section-subtitle">Naunet Labs es el estudio de software de un único desarrollador. Cada producto se diseña, se programa, se prueba y se mantiene de principio a fin, sin intermediarios ni comités.</p>
+      </div>
+      <div class="card reveal">
+        <table class="spec-table">
+          <tr><td>Fundado</td><td>2024</td></tr>
+          <tr><td>Equipo</td><td>1 persona</td></tr>
+          <tr><td>Productos activos</td><td id="statProductsTable">—</td></tr>
+          <tr><td>Base</td><td>Granada, España</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CONTACTO ======================= -->
+  <section class="section section--grey" id="contacto">
+    <div class="container grid--split grid">
+      <div class="reveal">
+        <p class="eyebrow">Contacto</p>
+        <h2 class="section-title">¿Un fallo, una idea o una consulta?</h2>
+        <p class="section-subtitle">Escribe directamente. Se responde de forma personal, no hay equipo de soporte detrás.</p>
+        <div class="social-links" id="socialLinks"></div>
+      </div>
+
+      <form class="card contact-form reveal" id="contactForm" novalidate>
+        <div class="form-field" id="field-name">
+          <label for="cf-name">Nombre</label>
+          <input type="text" id="cf-name" name="name" autocomplete="name" required>
+          <span class="form-error">Introduce tu nombre.</span>
+        </div>
+        <div class="form-field" id="field-email">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" autocomplete="email" required>
+          <span class="form-error">Introduce un email válido.</span>
+        </div>
+        <div class="form-field" id="field-type">
+          <label for="cf-type">Tipo</label>
+          <select id="cf-type" name="type">
+            <option value="bug">Reportar un error</option>
+            <option value="idea">Proponer una idea</option>
+            <option value="consulta">Consulta general</option>
+          </select>
+        </div>
+        <div class="form-field" id="field-message">
+          <label for="cf-message">Mensaje</label>
+          <textarea id="cf-message" name="message" required></textarea>
+          <span class="form-error">Escribe un mensaje antes de enviar.</span>
+        </div>
+        <button type="submit" class="button button--primary button--block">Enviar mensaje</button>
+        <p class="form-success" id="contactSuccess">Mensaje enviado. Gracias por escribir — se responde en persona en cuanto sea posible.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="footer-note">© <span id="footerYear"></span> Naunet Labs. Todos los derechos reservados.</span>
+    <nav class="footer-links">
+      <a href="privacidad.html">Privacidad</a>
+      <a href="seguridad.html">Seguridad</a>
+      <a href="#contacto">Soporte</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- ======================= LIGHTBOX (reutilizado en product-detail.html) ======================= -->
+<div class="lightbox-overlay" id="lightboxOverlay">
+  <div class="lightbox-content">
+    <div class="lightbox-frame" id="lightboxFrame"></div>
+    <div class="lightbox-controls">
+      <button class="lightbox-nav" id="lightboxPrev" aria-label="Imagen anterior">←</button>
+      <span class="lightbox-counter" id="lightboxCounter"></span>
+      <button class="lightbox-nav" id="lightboxNext" aria-label="Imagen siguiente">→</button>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">✕</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pageTitle">Documentación — Naunet Labs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><span class="logo-mark">◆</span> NAUNET <span class="logo-suffix">LABS</span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#productos">Productos</a>
+      <a href="index.html#recursos">Recursos</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="section section--white" style="padding-top: calc(var(--header-h) + 60px);">
+    <div class="container">
+      <a href="#" id="backToProduct" class="button--text">← Volver a la ficha del producto</a>
+      <div class="section-head" style="margin-top: 20px;">
+        <p class="eyebrow" id="docEyebrow">Documentación</p>
+        <h1 class="section-title" id="docTitle">Cargando…</h1>
+      </div>
+      <div id="docSectionsList"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="footer-note">© <span id="footerYear"></span> Naunet Labs. Todos los derechos reservados.</span>
+    <nav class="footer-links">
+      <a href="index.html">Volver al catálogo</a>
+      <a href="index.html#contacto">Soporte</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

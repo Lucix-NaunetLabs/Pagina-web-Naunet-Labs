@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pageTitle">Producto — Naunet Labs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">◆</span> NAUNET <span class="logo-suffix">LABS</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#productos">Productos</a>
+      <a href="index.html#recursos">Recursos</a>
+      <a href="index.html#empresa">Empresa</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="productDetailRoot">
+  <!-- Contenido generado dinámicamente en script.js a partir de products.json,
+       según el parámetro ?id= de la URL. -->
+  <div class="container" style="padding-top: 160px; padding-bottom: 80px;">
+    <p class="eyebrow">Cargando</p>
+    <h1 class="section-title" style="font-size: 32px;" id="loadingMsg">Buscando el producto…</h1>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="footer-note">© <span id="footerYear"></span> Naunet Labs. Todos los derechos reservados.</span>
+    <nav class="footer-links">
+      
+      <a href="index.html">Volver al catálogo</a>
+      <a href="privacidad.html">Privacidad</a>
+      <a href="seguridad.html">Seguridad</a>
+      <a href="index.html#contacto">Soporte</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- Lightbox de galería -->
+<div class="lightbox-overlay" id="lightboxOverlay">
+  <div class="lightbox-content">
+    <div class="lightbox-frame" id="lightboxFrame"></div>
+    <div class="lightbox-controls">
+      <button class="lightbox-nav" id="lightboxPrev" aria-label="Imagen anterior">←</button>
+      <span class="lightbox-counter" id="lightboxCounter"></span>
+      <button class="lightbox-nav" id="lightboxNext" aria-label="Imagen siguiente">→</button>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">✕</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

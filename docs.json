@@ -1,0 +1,20 @@
+{
+    "organizacion_estudios": 
+    {
+      "docSections": [
+        {
+          "title": "📚Estudia — Organizador de Bachillerato",
+          "content": "App web (PWA-ready) para organizar el estudio en bachillerato: horario, exámenes, avisos inteligentes y rachas de repaso."
+        },
+        {
+          "title": "Funcionalidades",
+          "content": "Inicio: horario del día en vivo (con línea de hora actual) y vista de calendario mensual. Bloques fijos (instituto, entrenamientos...) y sesiones de estudio añadidas en los huecos libres.<br>\nExámenes/Trabajos: listado cronológico con fecha y asignatura.<br>\nAvisos: notificaciones inteligentes según exámenes próximos, asignaturas descuidadas y recomendaciones del día.<br>\nAsignaturas/Rachas: checklist diario de repaso, racha de días seguidos estudiando y gráfica de progreso mensual.<br>\nAjustes: gestión de bloques fijos y asignaturas (con nivel de importancia)."
+        },
+        {
+          "title": "Tecnología",
+          "content": "HTML, CSS y JavaScript puro (sin frameworks ni dependencias externas).<br>\nDatos guardados en localStorage del dispositivo — sin backend ni cuenta.<br>\nPensada mobile-first, instalable como app (PWA) en Android.<br>"
+        }
+      ]
+    }
+
+}

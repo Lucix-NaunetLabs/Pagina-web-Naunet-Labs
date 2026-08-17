@@ -1,0 +1,51 @@
+{
+  "brand": {
+    "name": "Naunet Labs",
+    "tagline": "Software de precisión, hecho por una sola persona.",
+    "logoText": "NAUNET",
+    "logoSuffix": "LABS"
+  },
+  "colors": {
+    "_comment": "Estos valores están duplicados como referencia. La fuente de verdad real son las variables CSS en :root dentro de styles.css. Cambia ahí para que el sitio se actualice.",
+    "white": "#FFFFFF",
+    "grey50": "#F5F6F8",
+    "grey100": "#E7E9ED",
+    "ink": "#14181F",
+    "red": "#E4483A",
+    "redDark": "#B5372C",
+    "blue": "#1F3A5F"
+  },
+  "fonts": {
+    "display": "Space Grotesk",
+    "body": "Inter",
+    "mono": "JetBrains Mono"
+  },
+  "texts": {
+    "heroEyebrow": "Estudio de software independiente",
+    "heroTitle": "Herramientas construidas con la precisión de un laboratorio.",
+    "heroSubtitle": "Naunet Labs diseña y mantiene apps, ejecutables y extensiones para móvil y escritorio. Un solo desarrollador, un catálogo en crecimiento constante.",
+    "heroCtaPrimary": "Ver catálogo",
+    "heroCtaSecondary": "Cómo trabajamos",
+    "productsTitle": "Catálogo",
+    "productsSubtitle": "Cada producto se documenta como una muestra de laboratorio: versión, plataforma, requisitos y notas de uso.",
+    "pricingTitle": "Planes",
+    "resourcesTitle": "Recursos",
+    "contactTitle": "Contacto",
+    "contactSubtitle": "¿Un fallo, una idea o una consulta? Escribe directamente."
+  },
+  "social": [
+    { "name": "GitHub", "url": "https://github.com/", "icon": "github" },
+    { "name": "Twitter", "url": "https://twitter.com/", "icon": "twitter" },
+    { "name": "LinkedIn", "url": "https://linkedin.com/", "icon": "linkedin" }
+  ],
+  "contactForm": {
+    "_comment": "Sustituye ENDPOINT por tu endpoint de Formspree (https://formspree.io) o EmailJS. Ver README.md, sección 'Formulario de contacto'.",
+    "endpoint": "https://formspree.io/f/TU_ID_AQUI",
+    "provider": "formspree"
+  },
+  "nav": [
+    { "label": "Productos", "href": "index.html#productos" },
+    { "label": "Recursos", "href": "index.html#recursos" },
+    { "label": "Empresa", "href": "index.html#empresa" }
+  ]
+}

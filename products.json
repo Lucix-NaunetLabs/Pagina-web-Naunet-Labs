@@ -1,0 +1,132 @@
+{
+  "products": [   
+    {"id": "Habit30",
+      "name": "Habit30",
+      "category": "app",
+      "isPaid": false,
+      "description": "Una app que ayuda a los usuarios a mejorar sus vidas en 30 días mediante seguimiento de hábitos, metas y reflexiones.",
+      "fullDescription": "Una app que realiza un seguimiento de 30 días con hábitos, metas y reflexiones nocturnas, que incluye un pequeño juego: recompensas, pérdida de vidas, entrega de trofeos, y racha diaria para mantenerte con motivación.",
+      "valueProposition": "El objetivo es que mejores tu vida en 30 días.",
+      "specifications": {
+        "version": "1.0.0",
+        "platform": "Móvil (recomendado) y PC",
+        "size": "322KB",
+        "requirements": "",
+        "internalPricing": {
+          "_comment": "Uso interno — nunca se muestra en la interfaz pública.",
+          "plans": [
+            {
+              "name": "Basic",
+              "price": "Gratis",
+              "features": []
+            }
+          ]
+        }
+      },
+      "features": [
+        "Calendario mensual con anotaciones y contadores",
+        "Información detallada de hábitos (mejor y peor hábito, porcentaje de completados a la semana...)",
+        "Creador de metas según distintas necesidades",
+        "Juego de recompensas, rachas y vidas para mantener la motivación. Sistema de niveles con los trofeos.",
+        "Reflexiones nocturnas (para sentir que has terminado bien el día) que luego podrás ver para animarte"
+      ],
+      "guide": "1. Abre el enlace desde un navegador <br> 2. Pincha en ⁝ > Instalar y crear acceso directo > Instalar<br>3. Abrela y comienza a reordenar tu vida",
+      "faq": [
+        {
+          "question": "Dónde se guardan los datos?",
+          "answer": "Almacenamiento: Todos los datos del usuario se guardan en el dispositivo"
+        },
+        {
+          "question": "Qué pasa si enfermo en algún momento del mes?",
+          "answer": "Puedes pausar el seguimiento durante 3 días en total durante el mes"
+        },
+        {
+          "question": "Si desinstalo la app se guardan los datos?",
+          "answer": "Si la vuelves a instalar, los datos se guardan."
+        }
+      ],
+      "images": [
+        "assets\\images\\products\\habit30\\habit30_img1.jpg",
+        "assets\\images\\products\\habit30\\habit30_img2.jpg",
+        "assets\\images\\products\\habit30\\habit30_img3.jpg",
+        "assets\\images\\products\\habit30\\habit30_img4.jpg"
+      ],
+      "downloadFiles": {
+        "executable": {
+          "label": "Habit30.pwa (GitHub)",
+          "url": "https://lucix-naunetlabs.github.io/Habit30/"
+        },
+        "readme": {
+          "label": "README.md",
+          "url": "#"
+        }
+      },
+      "reviews": {
+        "enabled": true
+      }
+    },
+    
+    
+    {
+      "id": "organizacion_estudios",
+      "name": "Organizador de Estudios",
+      "category": "app",
+      "isPaid": false,
+      "description": "App web para organizar el estudio: horario, exámenes, avisos inteligentes y rachas de repaso.",
+      "fullDescription": "App web completa para organizar el estudio, con horarios, creación de exámenes, avisos inteligentes personalizados y rachas de repaso.",
+      "valueProposition": "Organízate en los estudios y obten mejores resultados",
+      "specifications": {
+        "version": "2.16",
+        "platform": "Móvil (recomendado) y PC",
+        "size": "330KB",
+        "requirements": "",
+        "internalPricing": {
+          "_comment": "Uso interno — nunca se muestra en la interfaz pública.",
+          "plans": [
+            {
+              "name": "Basic",
+              "price": "Gratis",
+              "features": []
+            }
+          ]
+        }
+      },
+      "features": [
+        "Inicio: horario del día en vivo y vista de calendario mensual.",
+        "Bloques fijos (instituto, entrenamientos...) y sesiones de estudio añadidas en los huecos libres.",
+        "Exámenes/Trabajos: listado cronológico con fecha y asignatura.",
+        "Avisos: notificaciones inteligentes según exámenes próximos, asignaturas descuidadas y recomendaciones del día.",
+        "Asignaturas/Rachas: checklist diario de repaso, racha de días seguidos estudiando y gráfica de progreso mensual.",
+        "Ajustes: gestión de bloques fijos y asignaturas (con nivel de importancia)."
+      ],
+      "guide": "1. Abre el enlace desde un navegador <br>\n2. Pincha en ⁝ > Instalar y crear acceso directo > Instalar<br>\n3. Abrela y comienza a reordenar tu vida<br>",
+      "faq": [
+        {
+          "question": "Hace falta una cuenta para usar esta app?",
+          "answer": "No. Los datos son guardados en localStorage del dispositivo. (Almacenamiento en el dispositivo)"
+        }
+      ],
+      "images": [
+        "assets\\images\\products\\organizador_estudio\\org_est1.jpg",
+        "assets\\images\\products\\organizador_estudio\\org_est2.jpg",
+        "assets\\images\\products\\organizador_estudio\\org_est5.jpg",
+        "assets\\images\\products\\organizador_estudio\\org_est3.jpg",
+        "assets\\images\\products\\organizador_estudio\\org_est4.jpg"
+      ],
+      "downloadFiles": {
+        "executable": {
+          "label": "Organizador de Estudios",
+          "url": "https://lucix-naunetlabs.github.io/App-de-Organizacion-de-Estudio/"
+        },
+        "readme": {
+          "label": "README.md",
+          "url": "#"
+        }
+      },
+      "reviews": {
+        "enabled": true
+      }
+    }
+    
+  ]
+}
